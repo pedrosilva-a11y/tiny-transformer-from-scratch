@@ -25,7 +25,7 @@
           <mxGeometry height="110" width="230" x="80" y="490" as="geometry" />
         </mxCell>
         <mxCell id="4VjlniU39edUG8nQXsp6-5" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;strokeColor=default;strokeWidth=1;dashed=1;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font face=&quot;Tahoma&quot; style=&quot;font-size: 18px;&quot;&gt;Tokenized Example&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;font face=&quot;Tahoma&quot;&gt;[&quot;W&quot;, &quot;h&quot;, &quot;a&quot;, &quot;t&quot;, &quot; &quot;, &quot;h&quot;, &quot;e&quot;, ..., &quot;s&quot;, &quot;.&quot;]&lt;/font&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="110" width="230" x="480" y="490" as="geometry" />
+          <mxGeometry height="110" width="230" x="500" y="490" as="geometry" />
         </mxCell>
         <mxCell id="4VjlniU39edUG8nQXsp6-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Character-Level Tokenizer" vertex="1">
           <mxGeometry height="110" width="110" x="340" y="680" as="geometry" />
