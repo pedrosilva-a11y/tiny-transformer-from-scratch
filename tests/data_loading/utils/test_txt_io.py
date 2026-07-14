@@ -5,7 +5,7 @@ from pathlib import Path
 
 from data_loading.utils.txt_io import read_txt
 
-CORRUPTED_FILE = "corrupted.txt"
+FIXTURE_CORRUPTED_FILE = "corrupted.txt"
 ENCODING = "utf-8"
 FIXTURES_DIR = "fixtures"
 FIXTURE_HAPPY_FILE = "happy.txt"
@@ -30,7 +30,7 @@ class TestTxtIo(unittest.TestCase):
             encoding=ENCODING,
         )
 
-        cls.corrupted_file = cls.fixtures_dir / CORRUPTED_FILE
+        cls.corrupted_file = cls.fixtures_dir / FIXTURE_CORRUPTED_FILE
         cls.corrupted_file.write_bytes(
             b"\x80\x81\x82",
         )

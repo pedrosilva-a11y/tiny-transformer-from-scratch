@@ -4,3 +4,10 @@
 # Python bytecode and cache
 **/__pycache__/
 *.pyc
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+
+# Coverage artifacts
+.coverage
