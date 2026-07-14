@@ -1,0 +1,2 @@
+download-data:
+	uv run python scripts/download_tiny_shakespeare.py
