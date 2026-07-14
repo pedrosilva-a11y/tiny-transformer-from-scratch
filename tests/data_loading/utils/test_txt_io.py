@@ -12,6 +12,9 @@ FIXTURE_HAPPY_FILE = "happy.txt"
 
 class TestTxtIo(unittest.TestCase):
     """Tests for TXT reading utilities."""
+    corrupted_file: Path
+    fixtures_dir: Path
+    happy_file: Path
 
     @classmethod
     def setUpClass(cls) -> None:

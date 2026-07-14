@@ -1,2 +1,24 @@
+.PHONY: lint format type-check test coverage download-data
+
+PYTHONPATH := src
+
+lint:
+	PYTHONPATH=$(PYTHONPATH) uv run ruff check .
+
+format:
+	PYTHONPATH=$(PYTHONPATH) uv run ruff format .
+
+type-check:
+	PYTHONPATH=$(PYTHONPATH) uv run mypy src scripts tests
+
+test:
+	PYTHONPATH=$(PYTHONPATH) uv run python -m unittest discover -s tests -t . -p "test_*.py"
+
+coverage:
+	PYTHONPATH=$(PYTHONPATH) uv run coverage run -m unittest discover -s tests -t . -p "test_*.py"
+	PYTHONPATH=$(PYTHONPATH) uv run coverage report
+
+check: lint type-check coverage
+
 download-data:
 	uv run python scripts/download_tiny_shakespeare.py
