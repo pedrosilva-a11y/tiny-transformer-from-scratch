@@ -1,5 +1,6 @@
-.PHONY: lint format type-check test coverage download-data
+.PHONY: lint format type-check test coverage download-data orchestrate
 
+CONFIG :=
 PYTHONPATH := src
 
 lint:
@@ -22,3 +23,6 @@ check: lint type-check coverage
 
 download-data:
 	uv run python scripts/download_tiny_shakespeare.py
+
+orchestrate:
+	PYTHONPATH=$(PYTHONPATH) uv run python -m orchestration.orchestration --config "$(CONFIG)"

@@ -1,15 +1,13 @@
 """Data loading module main script."""
 
 from pathlib import Path
-from typing import Any
 
-from utils.path_utils import resolve_ancestor_directory
 from data_loading.utils.txt_io import read_txt
+from orchestration.schema import DataLoadingConfig
+from utils.path_utils import resolve_ancestor_directory
 
-RAW_TEXT_PATH = "raw_text_path"
 
-
-def load_data(data_loading_config: dict[str, Any]) -> str:
+def load_data(data_loading_config: DataLoadingConfig) -> str:
     """Data load main module.
 
     Reads the input txt and returns the string version of it.
@@ -25,7 +23,7 @@ def load_data(data_loading_config: dict[str, Any]) -> str:
         parent_levels=3,
     )
 
-    relative_iput_file_path = data_loading_config[RAW_TEXT_PATH]
+    relative_iput_file_path = data_loading_config.raw_text_path
 
     return read_txt(
         file_path=project_root / relative_iput_file_path,

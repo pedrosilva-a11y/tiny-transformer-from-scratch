@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="NtGSKF13I9CKaHuXPRk5" name="Page-1">
-    <mxGraphModel dx="1092" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1584" dy="924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,25 +10,8 @@
         <mxCell id="4VjlniU39edUG8nQXsp6-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;strokeColor=default;strokeWidth=2;" value="&lt;h1 style=&quot;text-align: center; margin-top: 0px;&quot;&gt;&lt;font face=&quot;Tahoma&quot;&gt;Shakespeare&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font face=&quot;Tahoma&quot;&gt;&amp;nbsp;Text corpus with a&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1,115,394 characters.&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="80" width="230" x="80" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="4VjlniU39edUG8nQXsp6-6" edge="1" parent="1" source="4VjlniU39edUG8nQXsp6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=3;dashed=1;" target="4VjlniU39edUG8nQXsp6-5">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="390" y="545" />
-              <mxPoint x="390" y="545" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="4VjlniU39edUG8nQXsp6-11" edge="1" parent="1" source="4VjlniU39edUG8nQXsp6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=3;dashed=1;endArrow=none;endFill=0;" target="4VjlniU39edUG8nQXsp6-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="4VjlniU39edUG8nQXsp6-3" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;strokeColor=default;strokeWidth=1;dashed=1;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font face=&quot;Tahoma&quot; style=&quot;font-size: 18px;&quot;&gt;Sentence Example&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;font face=&quot;Tahoma&quot;&gt;What he cannot help in his nature, you account a vice in him. You must in no way say he is covetous.&lt;/font&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="110" width="230" x="80" y="490" as="geometry" />
-        </mxCell>
-        <mxCell id="4VjlniU39edUG8nQXsp6-5" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;strokeColor=default;strokeWidth=1;dashed=1;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font face=&quot;Tahoma&quot; style=&quot;font-size: 18px;&quot;&gt;Tokenized Example&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;font face=&quot;Tahoma&quot;&gt;[&quot;W&quot;, &quot;h&quot;, &quot;a&quot;, &quot;t&quot;, &quot; &quot;, &quot;h&quot;, &quot;e&quot;, ..., &quot;s&quot;, &quot;.&quot;]&lt;/font&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="110" width="230" x="500" y="490" as="geometry" />
-        </mxCell>
-        <mxCell id="4VjlniU39edUG8nQXsp6-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Character-Level Tokenizer" vertex="1">
-          <mxGeometry height="110" width="110" x="340" y="680" as="geometry" />
+          <mxGeometry height="185" width="340" x="25" y="495" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
