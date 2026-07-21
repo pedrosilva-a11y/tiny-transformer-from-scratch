@@ -173,10 +173,10 @@ class TestYamlIo(unittest.TestCase):
             yaml_path=self.non_string_key_file,
         )
 
-        with self.assertRaises(ValueError) as content:
+        with self.assertRaises(ValueError) as context:
             read_yaml(file_path=self.non_string_key_file)
 
-        actual_message = str(content.exception)
+        actual_message = str(context.exception)
         expected_message = (
             f"YAML file top-level keys must all be strings: "
             f"'{self.non_string_key_file.name}'"

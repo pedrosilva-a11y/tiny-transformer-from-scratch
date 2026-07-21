@@ -59,7 +59,8 @@ branch = true
 source = ["src"]
 omit = [
     "*/__init__.py",
-    "src/orchestration/*",
+    "src/orchestration/orchestration.py",
+    "src/data_loading/data_loading.py",
 ]
 
 [tool.coverage.report]
