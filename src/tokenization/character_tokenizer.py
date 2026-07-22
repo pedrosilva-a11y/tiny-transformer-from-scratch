@@ -28,6 +28,47 @@ def character_frequency_mapping(raw_text: str) -> dict[str, int]:
     return frequency_mapping
 
 
+def create_token_id_mapping(characters_sorted: list[str]) -> dict[str, int]:
+    """Map each token to a unique integer ID.
+
+    Args:
+        characters_sorted: A list of characters sorted in deterministic Unicode order.
+
+    Returns:
+        A dictionary mapping each character to a unique sequential ID.
+    
+    Raises:
+        TypeError: If the input is not a list.
+        TypeError: If the elements of the input list are not strings.
+        ValueError: If the input is an empty list.
+        ValueError: If the original list is not sorted.
+        ValueError: If any element is not exactly one character long.
+        ValueError: If the input contains duplicates.
+    """
+    if not isinstance(characters_sorted, list):
+        raise TypeError("The characters_sorted input should be a list.")
+
+    if not characters_sorted:
+        raise ValueError("The characters_sorted input should not be empty.")
+
+    if not all(isinstance(char, str) for char in characters_sorted):
+        raise TypeError("All list elements should be strings.")
+
+    if characters_sorted != sorted(characters_sorted):
+        raise ValueError("Input must be sorted.")
+
+    if not all(len(char) == 1 for char in characters_sorted):
+        raise ValueError("All list elements must be a single character.")
+
+    if len(characters_sorted) != len(set(characters_sorted)):
+        raise ValueError("The characters_sorted input must not contain duplicates.")
+
+    token_id_mapping = {
+        element: index for index, element in enumerate(characters_sorted)
+    }
+    return token_id_mapping
+
+
 def sort_and_extract_tokens(
     frequency_mapping: dict[str, int],
 ) -> list[str]:
