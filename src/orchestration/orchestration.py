@@ -43,14 +43,11 @@ def orchestrate_experiment() -> None:
 
     print(loaded_data[:100])
 
-    char_frequency_mapping = build_tokens(raw_input=loaded_data)
+    tokens_sorted = build_tokens(raw_input=loaded_data)
 
-    print(len(char_frequency_mapping))
+    print(tokens_sorted)
 
-    sorted_mapping = {
-        key: char_frequency_mapping[key] for key in sorted(char_frequency_mapping)
-    }
-    print(sorted_mapping)
+    print(len(tokens_sorted))
 
 
 if __name__ == "__main__":
