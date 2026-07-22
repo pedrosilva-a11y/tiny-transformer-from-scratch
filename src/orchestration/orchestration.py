@@ -8,6 +8,7 @@ from pydantic import ValidationError
 from data_loading.data_loading import load_data
 from orchestration.cli import parse_orchestration_arguments
 from orchestration.schema import ExperimentConfig
+from tokenization.tokenization import build_tokens
 from utils.path_utils import resolve_ancestor_directory
 from utils.yaml_io import read_yaml
 
@@ -41,6 +42,15 @@ def orchestrate_experiment() -> None:
     loaded_data = load_data(data_loading_config=config.data_loading)
 
     print(loaded_data[:100])
+
+    char_frequency_mapping = build_tokens(raw_input=loaded_data)
+
+    print(len(char_frequency_mapping))
+
+    sorted_mapping = {
+        key: char_frequency_mapping[key] for key in sorted(char_frequency_mapping)
+    }
+    print(sorted_mapping)
 
 
 if __name__ == "__main__":

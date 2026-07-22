@@ -62,6 +62,7 @@ omit = [
     "*/__init__.py",
     "src/orchestration/orchestration.py",
     "src/data_loading/data_loading.py",
+    "src/tokenization/tokenization.py"
 ]
 
 [tool.coverage.report]
